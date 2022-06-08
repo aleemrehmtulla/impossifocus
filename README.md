@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# impossifocus 🕺
 
-## Getting Started
+## What is this?
 
-First, run the development server:
+ImpossiFocus will measure focus by reading your brainwaves -- and if you're in the zone, it'll ensure that changes with a snazzy rick-roll :-)
 
-```bash
+*this is jokes if not noticed*
+
+
+https://www.loom.com/share/36d478d528d249d1b09db84288b6fa7f
+
+
+## Usage 🤝
+
+1. head to `impossifocus.vercel.app`
+2. click `sign in with neurosity`
+3. hit a score of 50+ and boom. rick rolled baby
+
+## Deployments 💻
+
+Vercel: https://impossifocus.vercel.app
+
+
+## For development 🧑‍💻
+
+### Scripts
+
+npm install
+
 npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Important notes
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Used neurosity's native SDK for measuring values
+- ChakraUI & Next for frontend
+- Made for fun -- not for a serious value add 😉
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Connect with me 🤗
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://twitter.com/aleemrehmtulla
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+https://aleemrehmtulla.com
 
-## Deploy on Vercel
+https://www.linkedin.com/in/aleemrehmtulla/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
