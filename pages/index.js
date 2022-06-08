@@ -6,6 +6,8 @@ import {
   VStack,
   useDisclosure,
   useToast,
+  Text,
+  Link,
 } from "@chakra-ui/react";
 import { Notion } from "@neurosity/notion";
 import LoginModal from "../components/LoginModal";
@@ -70,34 +72,40 @@ export default function Home() {
   };
 
   return (
-    <Center textColor="white" h="100vh" bg="blue.600">
-      <Head>
-        <title>ImpossiFocus</title>
-        <meta
-          property="og:image"
-          content="https://impossifocus.vercel.app/og-image.png"
+    <>
+      <Center textColor="white" h="100vh" bg="blue.600">
+        <Head>
+          <title>ImpossiFocus</title>
+          <meta
+            property="og:image"
+            content="https://impossifocus.vercel.app/og-image.png"
+          />
+          <meta property="og:title" content="ImpossiFocus" />
+          <meta
+            property="og:description"
+            content="ImpossiFocus will measure focus by reading your brainwaves -- and if you're in the zone, it'll ensure that changes with a snazzy rick-roll :-)"
+          />
+        </Head>
+        <VStack pb={20}>
+          <Heading fontSize="5xl">ImpossiFocus</Heading>
+          {progress ? (
+            <LoggedIn progress={progress} />
+          ) : (
+            <LoggedOut onOpen={onOpen} />
+          )}
+        </VStack>
+        <LoginModal
+          onClose={onClose}
+          isOpen={isOpen}
+          setEmail={setEmail}
+          setPassword={setPassword}
+          login={login}
         />
-        <meta property="og:title" content="ImpossiFocus" />
-        <meta
-          property="og:description"
-          content="ImpossiFocus will measure focus by reading your brainwaves -- and if you're in the zone, it'll ensure that changes with a snazzy rick-roll :-)"
-        />
-      </Head>
-      <VStack pb={20}>
-        <Heading fontSize="5xl">ImpossiFocus</Heading>
-        {progress ? (
-          <LoggedIn progress={progress} />
-        ) : (
-          <LoggedOut onOpen={onOpen} />
-        )}
-      </VStack>
-      <LoginModal
-        onClose={onClose}
-        isOpen={isOpen}
-        setEmail={setEmail}
-        setPassword={setPassword}
-        login={login}
-      />
-    </Center>
+      </Center>
+      <Text mt="-16" textColor="white" px={2} textAlign="center">
+        Made with very little focus by{" "}
+        <Link href="https://twitter.com/aleemrehmtulla">@aleemrehmtulla</Link>
+      </Text>
+    </>
   );
 }

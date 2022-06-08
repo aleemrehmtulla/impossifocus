@@ -4,9 +4,12 @@ const LoggedOut = ({ onOpen }) => {
   return (
     <>
       <Box align="center">
-        <Text w="60%" textAlign="center" fontSize="sm" fontWeight="normal">
-          by connecting your Neurosity (BCI), we can measure your brainwaves to
-          detect focus. if focused {" -> "} distract
+        <Text w="60%" textAlign="center" fontSize="sm">
+          by connecting your Neurosity (a Brain Computer Interface), we can
+          measure your brainwaves to detect focus.
+        </Text>
+        <Text fontWeight="medium" fontSize="sm">
+          if focused {" -> "} distract
         </Text>
       </Box>
 
