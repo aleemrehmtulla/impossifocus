@@ -8,7 +8,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { Notion } from "@neurosity/notion";
-import LoginModal from "../components/loginModal";
+import LoginModal from "../components/LoginModal";
 import LoggedOut from "../components/LoggedOut";
 import LoggedIn from "../components/LoggedIn";
 
