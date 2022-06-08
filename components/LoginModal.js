@@ -31,9 +31,9 @@ const LoginModal = ({ onClose, isOpen, setEmail, setPassword, login }) => {
           />
           <Input
             onChange={(e) => setPassword(e.target.value)}
-            autoComplete="password"
             mt={4}
             placeholder="Password"
+            type="password"
           />
         </ModalBody>
         <ModalFooter>
