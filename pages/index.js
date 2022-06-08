@@ -74,13 +74,10 @@ export default function Home() {
     <Center textColor="white" h="100vh" bg="blue.600">
       <VStack pb={20}>
         <Heading fontSize="5xl">ImpossiFocus </Heading>
-        <Box display="none">
-          <Text w="full" textAlign="center" fontSize="sm" fontWeight="semibold">
-            Start getting in the zone? BAM. rick rolled baby. good luck
-          </Text>
+        <Box align="center" display={progress ? "none" : "block"}>
           <Text w="60%" textAlign="center" fontSize="sm" fontWeight="normal">
-            Basically -- by connecting your Neurosity (BCI), we can measure your
-            gamma waves to detect focus. if focused {" -> "} distract
+            by connecting your Neurosity (BCI), we can measure your brainwaves
+            to detect focus. if focused {" -> "} distract
           </Text>
         </Box>
 
