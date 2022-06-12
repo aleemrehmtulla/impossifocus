@@ -28,6 +28,8 @@ export default function Home() {
   }
 
   const login = async () => {
+    console.log("Email Result", email);
+    console.log("Password Result", password);
     if (!email || !password) {
       toast({
         title: `NAH. email or password is empty`,
