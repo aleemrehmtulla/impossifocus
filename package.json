@@ -1,5 +1,5 @@
 {
-  "name": "negative",
+  "name": "quist",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,11 +12,13 @@
     "@chakra-ui/react": "^2.2.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
-    "@neurosity/notion": "^5.17.0",
+    "article-parser": "^7.0.0",
     "framer-motion": "^6.3.10",
+    "html-to-text": "^8.2.1",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "unfluff": "^3.2.0"
   },
   "devDependencies": {
     "eslint": "8.17.0",
